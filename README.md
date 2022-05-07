@@ -1,4 +1,4 @@
-# DeBruijn_sequence_constructor
+# Gerador de Sequências de DeBruijn
  
  Gerador capaz de construir sequências de DeBruijn para bases 2 a 62, utilizando modelagem por grafos e ciclos eulerianos, dado o tamanho das subsequências e o número de símbolos (Atividade 9 da disciplina de Grafos - DCOMP - UFSJ)
  
@@ -11,4 +11,4 @@
        
 # Execução      
  
-       (a definir)
+       python3 db_sequence_build.py

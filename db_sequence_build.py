@@ -6,7 +6,7 @@ import string
 
 def construct_debruijn_sequence(grafo):
 
-    debruijn_sequence = ''
+    debruijn_sequence = str()
     n = grafo.number_of_edges()     # Quantidade de arestas no grafo
 
     euler_path = list(nx.eulerian_circuit(grafo))   # Lista com a sequência de arestas do caminho de Euler
@@ -75,7 +75,7 @@ def conversor_dec_to_any(dec, base, r):
         sign = 1
 
     dec *= sign
-    digits = []
+    digits = list()
 
     # Conversão para base (s)
     while dec:
@@ -95,7 +95,7 @@ def conversor_dec_to_any(dec, base, r):
 
 # ------------------------------------------------------- MAIN ---------------------------------------------------------
 
-if __name__ == '__main__':
+def main():
 
     # Leitura dos parâmetros r (tamanho das sequências) e s (número de símbolos ou base)
     while True:
@@ -125,3 +125,6 @@ if __name__ == '__main__':
     # Exibição do resultado
     print("\nSequência de DeBruijn: " + debruijn_sequence)
 
+
+if __name__ == '__main__':
+    main()
